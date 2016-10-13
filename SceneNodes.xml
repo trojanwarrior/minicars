@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSceneNode>
+    <scenenode>
+        <nombreNodo>track1</nombreNodo>
+        <nombreEntidad>track1ent</nombreEntidad>
+        <nombreMalla>Track1.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.5</frictionBullet>
+        <bodyRestitutionBullet>1.0</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>track1bis</nombreNodo>
+        <nombreEntidad>track1ent</nombreEntidad>
+        <nombreMalla>Track1bis.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.8</frictionBullet>
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>track1Big</nombreNodo>
+        <nombreEntidad>track1Bigent</nombreEntidad>
+        <nombreMalla>Track1Big.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.8</frictionBullet>
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>track1bisNoRoad</nombreNodo>
+        <nombreEntidad>track1ent</nombreEntidad>
+        <nombreMalla>Track1bisNoRoad.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.8</frictionBullet>
+        <bodyRestitutionBullet>1.0</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>track1NoRoadBig</nombreNodo>
+        <nombreEntidad>track1NoRoadBigent</nombreEntidad>
+        <nombreMalla>Track1NoRoadBig.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.8</frictionBullet>
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>PlaneRoad</nombreNodo>
+        <nombreEntidad>PlaneRoadent</nombreEntidad>
+        <nombreMalla>PlaneRoad.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0.001" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.8</frictionBullet>
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>Atrezzo</nombreNodo>
+        <nombreEntidad>AtrezzoEnt</nombreEntidad>
+        <nombreMalla>Atrezzo.002.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <!--<posInicial x="0" y="1.007" z="0"></posInicial>-->
+        <posInicial x="0" y="0.03" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.85</frictionBullet>
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>carGroupC1</nombreNodo>
+        <nombreEntidad>carGroupC1</nombreEntidad>
+        <nombreMalla>groupc-1.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="-1" y="2.01" z="-12"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>track1colLateral</nombreNodo>
+        <nombreEntidad>track1ColLateral</nombreEntidad>
+        <nombreMalla>Track1Col.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>1.0</frictionBullet>
+        <bodyRestitutionBullet>1.0</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>planoSalida</nombreNodo>
+        <nombreEntidad>unknown</nombreEntidad>
+        <nombreMalla>unknown</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="1" x="0" y="0" z="0"></orientacion>
+        <posInicial x="0" y="10" z="24"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>1.0</masaBullet>
+        <frictionBullet>1.0</frictionBullet>
+        <bodyRestitutionBullet>0.0</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>CheckPointPlane</nombreNodo>
+        <nombreEntidad>CheckPointPlaneEnt</nombreEntidad>
+        <nombreMalla>CheckPointPlane.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="1" x="0" y="0" z="0"></orientacion>
+        <posInicial x="0" y="10" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.0</frictionBullet>
+        <bodyRestitutionBullet>0.0</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>farara-sportOneBlock</nombreNodo>
+        <nombreEntidad>farara-sport</nombreEntidad>
+        <nombreMalla>farara-sport.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>1</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>formulaOneBlock</nombreNodo>
+        <nombreEntidad>formula</nombreEntidad>
+        <nombreMalla>formula.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>2</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>groupC1OneBlock</nombreNodo>
+        <nombreEntidad>groupC1</nombreEntidad>
+        <nombreMalla>groupc-1.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>0</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>groupC2OneBlock</nombreNodo>
+        <nombreEntidad>groupc2</nombreEntidad>
+        <nombreMalla>groupc-2.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>0</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>kartOneBlock</nombreNodo>
+        <nombreEntidad>kart</nombreEntidad>
+        <nombreMalla>kart.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>0</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>lamba-sportOneBlock</nombreNodo>
+        <nombreEntidad>lamba-sport</nombreEntidad>
+        <nombreMalla>lamba-sport.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>1</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>parsche-sportOneBlock</nombreNodo>
+        <nombreEntidad>parsche-sport</nombreEntidad>
+        <nombreMalla>parsche-sport.mesh</nombreMalla>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <posInicial x="0" y="0" z="0"></posInicial>
+        <orientacionShapeBullet  w="0.707" x="0" y="-0.707" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>200</masaBullet>
+        <frictionBullet>0.4</frictionBullet>
+        <bodyRestitutionBullet>0.6</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+        <dificultad>2</dificultad>
+    </scenenode>
+    <scenenode>
+        <nombreNodo>PlaneRoadBig</nombreNodo>
+        <nombreEntidad>PlaneRoadBigent</nombreEntidad>
+        <nombreMalla>PlaneRoadBig.mesh</nombreMalla>
+        <nombreMaterial>track1matBI.material</nombreMaterial>
+        <!--<posInicial x="0" y="1.007" z="0"></posInicial>-->
+        <posInicial x="0" y="0.9" z="0"></posInicial>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="0" z="0"></posShapeBullet>
+        <masaBullet>0.0</masaBullet>
+        <frictionBullet>0.85</frictionBullet><!-- 0.85 -->
+        <bodyRestitutionBullet>0.95</bodyRestitutionBullet>
+        <escala x="1" y="1" z="1"></escala>
+    </scenenode>
+</dataSceneNode>
+
+<dataLights>
+</dataLights>
+
+<dataCamera>
+    <camera>
+        <nombreCamera>IntroCamera</nombreCamera>
+         <posInicial x="0" y="16" z="18"></posInicial>
+<!---        <posInicial x="7.27" y="2.15" z="-10.71"></posInicial> -->
+        <orientacion w="-0.819" x="-0.574" y="0" z="0"></orientacion>
+        <direccion x="0" y="0" z="0"></direccion>
+        <posLookAt x="0" y="0" z="-22"></posLookAt>
+        <nearClipDistance>0.1</nearClipDistance>
+        <farClipDistance>100</farClipDistance>
+    </camera>
+</dataCamera>
+
+<dataVehiculoRayCast>
+    <dataRayCast>  
+        <nombreNodo>farara-sport</nombreNodo>
+        <nombreMallaRueda>wheel-farara-sport.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-farara-sport.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>45</masaBullet><!-- 35-->
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>20</friccionRueda><!--1e1f-->
+        <influenciaRodado>0.05</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.03</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <!--<posicion x="3" y="1.2" z="-12"></posicion>-->
+        <posicion x="-6.20" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.001</velocidadGiro> <!-- parece un valor adecuado para el kart -->
+        <aceleracion>500</aceleracion><!-- 8000 -->
+        <frenada>200</frenada> <!-- 7000 -->
+        <aceleracionMarchaAtras>400</aceleracionMarchaAtras>
+        <suspensionStiffness>50</suspensionStiffness> <!-- un valor de 200 parece muy poco, con 2000 parece estable -->
+        <suspensionCompresion>0.3</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionDamping>0.5</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.8</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>150</maxSuspensionForce> <!--150 -->
+        <frictionSlip>0.8</frictionSlip> <!--0.8 coches realistas-->
+        <posRueda0 x="0.4" y="-0.10" z="0.69" ></posRueda0>
+        <posRueda1 x="-0.4" y="-0.10" z="0.69"></posRueda1>
+        <posRueda2 x="-0.41" y="-0.10" z="-0.58"></posRueda2>
+        <posRueda3 x="0.41" y="-0.10" z="-0.58"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>1.6</potenciadorPrimera>
+        <traccionTrasera>1</traccionTrasera>
+        <maxSkidValue>0.4</maxSkidValue>
+        <skidCorto>0.3</skidCorto>
+        <skidMedio>0.1</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>kart</nombreNodo>
+        <nombreMallaRueda>wheel-kart.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-kart-chasis.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>20</masaBullet> <!-- 400-->
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>1e1f</friccionRueda> <!-- 1e30f -->
+        <influenciaRodado>0.0</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.0205</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <posicion x="-4" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.002</velocidadGiro> <!-- 0.0015 -->
+        <aceleracion>100</aceleracion> <!-- 3000 -->
+        <frenada>80</frenada>
+        <aceleracionMarchaAtras>4000</aceleracionMarchaAtras>
+        <suspensionStiffness>200</suspensionStiffness> <!-- un valor de 200 parece muy poco, con 3000 parece estable -->
+        <!--<suspensionCompresion>0.1</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionCompresion>0.1</suspensionCompresion>
+        <suspensionDamping>0.2</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.3</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>50</maxSuspensionForce> <!-- 150 al inicio, 1500 hace que levante el morro al acelerar, 200 hace que el muelle 
+                                                          de la suspensión tenga demasiada fuerza haciendo que salte demasiado con los baches
+                                                          150 parece un valor adecuado :D -->
+        <frictionSlip>100</frictionSlip> <!-- 100 empezamos con 10000 (valor bueno en principio), 10 parece igual, 100000 inestable, 5000 parece buen valor también -->
+        <posRueda0 x="0.18" y="-0.115" z="0.205" ></posRueda0> <!-- y="-0.12" -->
+        <posRueda1 x="-0.18" y="-0.115" z="0.205"></posRueda1>
+        <posRueda2 x="-0.18" y="-0.115" z="-0.215"></posRueda2>
+        <posRueda3 x="0.18" y="-0.115" z="-0.215"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>4</potenciadorPrimera>
+        <maxSkidValue>0.1</maxSkidValue>
+        <skidCorto>0.075</skidCorto>
+        <skidMedio>0.025</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>formula</nombreNodo>
+        <nombreMallaRueda>wheel-formula.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-formula.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>250</masaBullet> <!-- 350 -->
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>1e3f</friccionRueda><!-- 1e30f -->
+        <influenciaRodado>0.0001</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.132</indiceRestitucionSuspension> <!-- 0.13 parece un valor adecuado para el formula-->
+        <posicion x="-2.02" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.0014</velocidadGiro> <!-- 0.002 -->
+        <aceleracion>2000</aceleracion><!-- 4000 -->
+        <frenada>2000</frenada>
+        <aceleracionMarchaAtras>4000</aceleracionMarchaAtras>
+        <suspensionStiffness>50</suspensionStiffness> <!-- 2000 -->
+        <suspensionCompresion>0.1</suspensionCompresion> <!-- 0.2 -->
+        <suspensionDamping>0.2</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.2</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>150</maxSuspensionForce> <!--100 -->
+        <frictionSlip>10000</frictionSlip> <!-- 5000 -->
+        <posRueda0 x="0.4" y="0.05" z="0.65" ></posRueda0>
+        <posRueda1 x="-0.4" y="0.05" z="0.65"></posRueda1>
+        <posRueda2 x="-0.41" y="0.05" z="-0.75"></posRueda2>
+        <posRueda3 x="0.41" y="0.05" z="-0.75"></posRueda3>
+        <escalaRuedaTrasera x="1.30" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>3.5</potenciadorPrimera>
+        <maxSkidValue>0.1</maxSkidValue>
+        <skidCorto>0.075</skidCorto>
+        <skidMedio>0.025</skidMedio>
+        <skidLargo>0.0001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>groupC1</nombreNodo>
+        <nombreMallaRueda>wheel-groupc-1.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-groupc-1.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>40</masaBullet>
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>25</friccionRueda>
+        <influenciaRodado>0.01</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.1</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <!--<posicion x="5" y="1.2" z="-12"></posicion>-->
+        <posicion x="2.08" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.0018</velocidadGiro> <!-- parece un valor adecuado para el kart -->
+        <aceleracion>750</aceleracion><!-- 4750 -->
+        <frenada>300</frenada>
+        <aceleracionMarchaAtras>4000</aceleracionMarchaAtras>
+        <suspensionStiffness>40</suspensionStiffness> <!-- 2000 -->
+        <suspensionCompresion>0.3</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionDamping>0.5</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.8</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>150</maxSuspensionForce> <!-- 150 -->
+        <frictionSlip>0.8</frictionSlip> <!-- 5000 -->
+        <posRueda0 x="0.41" y="0" z="0.735" ></posRueda0>  <!-- y -0.2 -->
+        <posRueda1 x="-0.41" y="0" z="0.735"></posRueda1>
+        <posRueda2 x="-0.41" y="0" z="-0.63"></posRueda2>
+        <posRueda3 x="0.41" y="0" z="-0.63"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>2.5</potenciadorPrimera>
+        <traccionTrasera>0</traccionTrasera>
+        <maxSkidValue>0.1</maxSkidValue>
+        <skidCorto>0.075</skidCorto>
+        <skidMedio>0.025</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>groupC2</nombreNodo>
+        <nombreMallaRueda>wheel-groupc-2.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-groupc-2.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>30</masaBullet><!-- 200, 100 -->
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>1</friccionRueda><!-- 1e30f -->
+        <influenciaRodado>0.01</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.04</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <!--<posicion x="6" y="1.2" z="-12"></posicion>-->
+        <posicion x="6.10" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.0018</velocidadGiro> <!-- parece un valor adecuado para el kart -->
+        <aceleracion>1000</aceleracion>
+        <frenada>600</frenada>
+        <aceleracionMarchaAtras>4000</aceleracionMarchaAtras>
+        <suspensionStiffness>2000</suspensionStiffness> <!-- un valor de 200 parece muy poco, con 2000 parece estable -->
+        <suspensionCompresion>0.1</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionDamping>0.4</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.1</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>150</maxSuspensionForce> <!-- 150 al inicio, 1500 hace que levante el morro al acelerar, 200 hace que el muelle 
+                                                          de la suspensión tenga demasiada fuerza haciendo que salte demasiado con los baches
+                                                          150 parece un valor adecuado :D -->
+        <frictionSlip>0.8</frictionSlip> <!-- 5000 -->
+        <posRueda0 x="0.41" y="-0.05" z="0.68" ></posRueda0>
+        <posRueda1 x="-0.41" y="-0.05" z="0.68"></posRueda1>
+        <posRueda2 x="-0.42" y="-0.05" z="-0.69"></posRueda2>
+        <posRueda3 x="0.42" y="-0.05" z="-0.69"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>3.5</potenciadorPrimera>
+        <traccionTrasera>0</traccionTrasera>
+        <maxSkidValue>0.1</maxSkidValue>
+        <skidCorto>0.075</skidCorto>
+        <skidMedio>0.025</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>lamba-sport</nombreNodo>
+        <nombreMallaRueda>wheel-lamba-sport.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-lamba-sport.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>50</masaBullet> <!-- 50 -->
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>70</friccionRueda><!--100-->
+        <influenciaRodado>0.01</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.1</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <!--<posicion x="-2.32" y="1.2" z="-22"></posicion>-->
+        <posicion x="10" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.001</velocidadGiro> <!-- 0.001 -->
+        <aceleracion>500</aceleracion> <!-- 700 -->
+        <frenada>400</frenada><!-- 2000 -->
+        <aceleracionMarchaAtras>4000</aceleracionMarchaAtras>
+        <suspensionStiffness>75</suspensionStiffness> <!-- 80 -->
+        <suspensionCompresion>0.3</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionDamping>0.4</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.7</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>150</maxSuspensionForce> <!-- 100 -->
+        <frictionSlip>100</frictionSlip> <!-- 0.8 -->
+        <posRueda0 x="0.4" y="-0.01" z="0.71" ></posRueda0>
+        <posRueda1 x="-0.4" y="-0.01" z="0.71"></posRueda1>
+        <posRueda2 x="-0.41" y="-0.01" z="-0.58"></posRueda2>
+        <posRueda3 x="0.41" y="-0.01" z="-0.58"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>3.5</potenciadorPrimera>
+        <traccionTrasera>0</traccionTrasera>
+        <maxSkidValue>0.8</maxSkidValue>
+        <skidCorto>0.5</skidCorto>
+        <skidMedio>0.2</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    <dataRayCast>  
+        <nombreNodo>parsche-sport</nombreNodo>
+        <nombreMallaRueda>wheel-parsche-sport.mesh</nombreMallaRueda>
+        <nombreMallaChasis>car-parsche-sport.mesh</nombreMallaChasis>
+        <nombreMaterial>unknown</nombreMaterial>
+        <orientacion w="0.707" x="0" y="-0.707" z="0"></orientacion>
+        <orientacionShapeBullet w="0" x="0" y="0" z="0"></orientacionShapeBullet>
+        <posShapeBullet x="0" y="1" z="0"></posShapeBullet>
+        <masaBullet>60</masaBullet>
+        <frictionBullet>0.6</frictionBullet>
+        <bodyRestitutionBullet>0.1</bodyRestitutionBullet>
+        <radioRuedas>1.0</radioRuedas>
+        <anchoRuedas>0.5</anchoRuedas>
+        <friccionRueda>18.5</friccionRueda> <!-- 1e30f -->
+        <influenciaRodado>0.01</influenciaRodado> <!-- para el kart 0.01 evita que vuelque al girar bruscamente -->
+        <indiceRestitucionSuspension>0.03</indiceRestitucionSuspension> <!-- seguir probando valores entre 0.03 y 0.09 -->
+        <posicion x="14.10" y="2.1" z="-22"></posicion>
+        <velocidadGiro>0.0026</velocidadGiro> <!-- parece un valor adecuado para el kart -->
+        <aceleracion>600</aceleracion>
+        <frenada>500</frenada>
+        <aceleracionMarchaAtras>200</aceleracionMarchaAtras>
+        <suspensionStiffness>70</suspensionStiffness> <!-- un valor de 200 parece muy poco, con 2000 parece estable -->
+        <suspensionCompresion>0.2</suspensionCompresion> <!-- inicio valor 0.3, 0.1 parece estable, 1.0 estable pero lento al arrancar -->
+        <suspensionDamping>0.3</suspensionDamping>  <!-- 0.5 al inicio, 0.1 0.2 0.3  hace que corra mucho mas pero menos estable, 0.4 parece adecuado -->
+        <maxSuspensionTravelCM>0.4</maxSuspensionTravelCM> <!-- 0.8 al inicio, 0.1 parece un buen valor -->
+        <maxSuspensionForce>350</maxSuspensionForce> <!-- 150 al inicio, 1500 hace que levante el morro al acelerar, 200 hace que el muelle 
+                                                          de la suspensión tenga demasiada fuerza haciendo que salte demasiado con los baches
+                                                          150 parece un valor adecuado :D -->
+        <frictionSlip>0.8</frictionSlip> <!-- empezamos con 10000 (valor bueno en principio), 10 parece igual, 100000 inestable, 5000 parece buen valor también -->
+        <posRueda0 x="0.4" y="-0.10" z="0.715" ></posRueda0>
+        <posRueda1 x="-0.4" y="-0.10" z="0.715"></posRueda1>
+        <posRueda2 x="-0.41" y="-0.10" z="-0.555"></posRueda2>
+        <posRueda3 x="0.41" y="-0.10" z="-0.555"></posRueda3>
+        <escalaRuedaTrasera x="1" y="1" z="1" ></escalaRuedaTrasera>
+        <escala x="1" y="1" z="1"></escala>
+        <potenciadorPrimera>2</potenciadorPrimera>
+        <traccionTrasera>0</traccionTrasera>
+        <maxSkidValue>0.1</maxSkidValue>
+        <skidCorto>0.075</skidCorto>
+        <skidMedio>0.025</skidMedio>
+        <skidLargo>0.001</skidLargo>
+    </dataRayCast>  
+    
+</dataVehiculoRayCast>

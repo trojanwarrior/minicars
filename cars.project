@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="cars" InternalType="Console">
+  <Plugins>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="src/Bluez_Util.cpp"/>
+    <File Name="src/Carrusel.cpp"/>
+    <File Name="src/ControlsState.cpp"/>
+    <File Name="src/CreditsState.cpp"/>
+    <File Name="src/Crosshair.cpp"/>
+    <File Name="src/GameManager.cpp"/>
+    <File Name="src/InputManager.cpp"/>
+    <File Name="src/IntroState.cpp"/>
+    <File Name="src/LooseState.cpp"/>
+    <File Name="src/main.cpp"/>
+    <File Name="src/MenuState.cpp"/>
+    <File Name="src/ogreUtil.cpp"/>
+    <File Name="src/PauseState.cpp"/>
+    <File Name="src/PlayState.cpp"/>
+    <File Name="src/PlayWidget.cpp"/>
+    <File Name="src/records.cpp"/>
+    <File Name="src/RecordsState.cpp"/>
+    <File Name="src/sounds.cpp"/>
+    <File Name="src/Wiimote.cpp"/>
+    <File Name="src/WinState.cpp"/>
+    <File Name="include/CreditsState.h"/>
+    <File Name="src/SceneNodeConfig.cpp"/>
+    <File Name="src/car.cpp"/>
+    <File Name="src/track.cpp"/>
+    <File Name="src/OptionsState.cpp"/>
+    <File Name="src/CarRayCast.cpp"/>
+    <File Name="src/testStateVehicRaycast.cpp"/>
+    <File Name="src/carSelectorState.cpp"/>
+    <File Name="src/iamanager.cpp"/>
+    <File Name="src/IAPointsDeserializer.cpp"/>
+    <File Name="src/IAPointsSerializer.cpp"/>
+    <File Name="src/pathDrawerState.cpp"/>
+    <File Name="src/cpuPlayer.cpp"/>
+    <File Name="src/actualOptions.cpp"/>
+    <File Name="src/puntoManager.cpp"/>
+    <File Name="src/humanPlayer.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="include/Bluez_Util.h"/>
+    <File Name="include/Carrusel.h"/>
+    <File Name="include/constants.h"/>
+    <File Name="include/ControlsState.h"/>
+    <File Name="include/Crosshair.h"/>
+    <File Name="include/GameManager.h"/>
+    <File Name="include/GameState.h"/>
+    <File Name="include/InputManager_.h"/>
+    <File Name="include/IntroState.h"/>
+    <File Name="include/LooseState.h"/>
+    <File Name="include/MenuState.h"/>
+    <File Name="include/OgreUtil.h"/>
+    <File Name="include/PauseState.h"/>
+    <File Name="include/PlayState.h"/>
+    <File Name="include/PlayWidget.h"/>
+    <File Name="include/records.h"/>
+    <File Name="include/RecordsState.h"/>
+    <File Name="include/sounds.h"/>
+    <File Name="include/Wiimote.h"/>
+    <File Name="include/WinState.h"/>
+    <File Name="include/SceneNodeConfig.h"/>
+    <File Name="include/car.h"/>
+    <File Name="include/track.h"/>
+    <File Name="include/OptionsState.h"/>
+    <File Name="include/CarRayCast.h"/>
+    <File Name="include/testStateVehicRayCast.h"/>
+    <File Name="include/carSelectorState.h"/>
+    <File Name="include/iamanager.h"/>
+    <File Name="include/iapoint.h"/>
+    <File Name="include/IAPointsDeserializer.h"/>
+    <File Name="include/IAPointsSerializer.h"/>
+    <File Name="include/pathDrawerState.h"/>
+    <File Name="include/cpuPlayer.h"/>
+    <File Name="include/bulletUtil.h"/>
+    <File Name="include/actualOptions.h"/>
+    <File Name="include/puntoIA.h"/>
+    <File Name="include/puntoManager.h"/>
+    <File Name="include/humanPlayer.h"/>
+    <File Name="include/soundUtil.h"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g;-O0;-Wall" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Debug" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean
+</CleanCommand>
+        <BuildCommand>make -j4 mode=debug</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>/home/twsh/desarrollo/codelite/CEDV/cars</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="yes" EnableCpp14="yes">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths>/usr/include
+/usr/include/c++
+/usr/include/c++/5.3.1/
+/usr/include/c++/5.3.1/x86_64-redhat-linux/
+/usr/include/c++/5.3.1/backward/
+/usr/include/bullet
+/usr/include/boost
+/usr/include/clang
+/usr/include/OGRE
+/usr/include/OIS
+/usr/include/SDL
+/usr/include/SDL2
+/usr/local/include/
+/usr/local/include/MYGUI
+/usr/local/include/OgreBullet/Collisions
+/usr/local/include/OgreBullet/Dynamics
+/usr/local/include/libcwiimote</SearchPaths>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="GCC" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-O2;-Wall" C_Options="-O2;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="$(IntermediateDirectory)/$(ProjectName)" IntermediateDirectory="./Release" Command="./$(ProjectName)" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <BuildSystem Name="Default"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="no">
+        <RebuildCommand/>
+        <CleanCommand/>
+        <BuildCommand/>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory/>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no" EnableCpp14="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+</CodeLite_Project>
