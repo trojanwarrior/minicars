@@ -28,7 +28,9 @@
 #include <OgreOverlaySystem.h>
 #include "InputManager_.h"
 
+#ifndef WINDOWS
 #include "Wiimote.h"
+#endif
 
 
 class GameState; // <----- Declaración en avanzada de la clase GameState (Forward declaration)
@@ -42,8 +44,11 @@ class GameState; // <----- Declaración en avanzada de la clase GameState (Forwa
 class GameManager :public Ogre::FrameListener, 
                    public Ogre::Singleton<GameManager>, 
                    public OIS::KeyListener, 
-                   public OIS::MouseListener,
-                   public wiimWrapper::WiimoteListener
+                   public OIS::MouseListener
+#ifndef WINDOWS
+
+                   ,public wiimWrapper::WiimoteListener
+#endif
 {
  public:
   GameManager ();
@@ -61,7 +66,9 @@ class GameManager :public Ogre::FrameListener,
   static GameManager& getSingleton ();
   static GameManager* getSingletonPtr ();
   
+#ifndef WINDOWS
   bool usarWiimote();                                   //  WIIMOTE
+#endif
 
  protected:
   Ogre::Root* _root;
@@ -87,9 +94,11 @@ class GameManager :public Ogre::FrameListener,
   bool mouseReleased (const OIS::MouseEvent &e, OIS::MouseButtonID id);
   
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
   bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
   bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
   bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
 /*******************************************************************************/  
   
   // Gestor de eventos de entrada.

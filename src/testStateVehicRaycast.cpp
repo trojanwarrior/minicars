@@ -768,11 +768,13 @@ bool testStateVehicRayCast::compruebaCheckPoint()
     
 }
 
+#ifndef WINDOWS
 bool testStateVehicRayCast::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool testStateVehicRayCast::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool testStateVehicRayCast::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif
 
 

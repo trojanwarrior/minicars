@@ -144,9 +144,11 @@ void WinState::createScene()
  createMyGui();
 }
 
+#ifndef WINDOWS
 bool WinState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool WinState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool WinState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif

@@ -7,8 +7,9 @@
 #include <vector>
 //#include "/home/twsh/desarrollo/libwiimote-ng-v0.5.1/src/wiimote.h"
 //#include "/home/twsh/desarrollo/libwiimote-ng-v0.5.1/src/wiimote_api.h"
-#include <wiimote.h>
-#include <wiimote_api.h>
+#ifndef WINDOWS
+	#include <wiimote.h>
+	#include <wiimote_api.h>
 
 #define IR_X_MAX 1023
 #define IR_Y_MAX  767
@@ -74,5 +75,6 @@ class Wiimote
 };
 
 } // Fin del namespace wiimWrapper
+#endif // !WINDOWS
 
 #endif // WIIMOTE_H

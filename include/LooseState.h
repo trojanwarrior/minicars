@@ -56,9 +56,11 @@ class LooseState : public Ogre::Singleton<LooseState>, public GameState
   void setPoints(int p){points=p;};
 
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
     bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
 /*******************************************************************************/  
 
   // Heredados de Ogre::Singleton.

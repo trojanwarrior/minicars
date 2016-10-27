@@ -27,7 +27,9 @@
 #include "GameManager.h"
 #include "InputManager_.h"
 
-#include "Wiimote.h"
+#ifndef WINDOWS
+	#include "Wiimote.h"
+#endif
 
 // Clase abstracta de estado básico.
 // Definición base sobre la que extender
@@ -54,9 +56,11 @@ class GameState {
   virtual bool mouseReleased (const OIS::MouseEvent &e, OIS::MouseButtonID id)=0;
 
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
   virtual bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e) = 0;
   virtual bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e) = 0;
   virtual bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e) = 0;
+#endif
 /*******************************************************************************/  
 
   // Gestión básica para la gestión

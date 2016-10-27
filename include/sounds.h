@@ -1,8 +1,14 @@
 #ifndef __SOUNDS__
 #define __SOUNDS__
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_mixer.h"
+#ifdef WINDOWS
+	#include "SDL.h"
+	#include "SDL_mixer.h"
+#else
+	#include "SDL/SDL.h"
+	#include "SDL/SDL_mixer.h"
+#endif
+
 #include <string>
 #include <vector>
 #include <mxml.h>
@@ -48,7 +54,7 @@ class sounds {
     void unset_channel ();
     inline int isMixPlaying(int canal){ return Mix_Playing(canal); };
     inline Mix_Chunk* getMixChunk(string nombreEfecto){ return map_effect[nombreEfecto]; };
-    inline void setVolume(string nombreEfecto, int volumen){map_effect[nombreEfecto]->volume = volumen;};
+    inline void setVolume(string nombreEfecto, int volumen){/*map_effect[nombreEfecto]->volume = volumen;*/}; // COMENTADO HASTA QUE ARREGLE SDL_MIXER
     inline void setMusicVolume(int volumen){ Mix_VolumeMusic(volumen); };
     inline int getMusicVolume(){ return Mix_VolumeMusic(-1); }; // Al pasarle -1 a Mix_VolumeMusic indicamos que no queremos cambiar el volumen, solo recuperar valor actual.
     inline int maxVolume(){ return MIX_MAX_VOLUME; };

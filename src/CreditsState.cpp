@@ -125,12 +125,14 @@ void CreditsState::createMyGui()
   //edt_high->setCaption(get_high_score());
 }
 
+#ifndef WINDOWS
 bool CreditsState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool CreditsState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool CreditsState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif
 
 void CreditsState::notifyButtonPress(MyGUI::Widget* _widget)
 {

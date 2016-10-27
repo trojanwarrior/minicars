@@ -11,11 +11,16 @@
 #include "records.h"
 #include "PlayWidget.h"
 
+#ifdef WINDOWS
+#include <Windows.h>
+#endif
+
 using namespace std;
 using namespace Ogre;
 using namespace std;
 
-pthread_t PlayWidget::thread = 0;
+//pthread_t PlayWidget::thread = 0;
+pthread_t PlayWidget::thread;// = 0;
 
 PlayWidget::PlayWidget()
 {
@@ -73,7 +78,11 @@ void * PlayWidget::timer(void * data)
   while (1)
   {
     obj->timer(time++);
-    sleep(1);
+	#ifdef WINDOWS
+		Sleep(1);
+	#else
+	    sleep(1);
+	#endif
   }
   return NULL;
 }

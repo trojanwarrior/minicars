@@ -11,6 +11,10 @@
 #include "records.h"
 #include "Carrusel.h"
 
+#ifdef WINDOWS
+#include <Windows.h>
+#endif
+
 using namespace std;
 using namespace Ogre;
 using namespace std;
@@ -47,17 +51,33 @@ void * Carrusel::run( void* arg)
 //    start->setVisible(false); 
     three->setVisible(true);
     sounds::getInstance()->play_effect("123");
+#ifdef WINDOWS
+	Sleep(1);
+#else
     sleep(1);
+#endif
     three->setVisible(false); two->setVisible(true);
     sounds::getInstance()->play_effect("123");
-    sleep(1);
-    two->setVisible(false); one->setVisible(true);
+#ifdef WINDOWS
+	Sleep(1);
+#else
+	sleep(1);
+#endif
+	two->setVisible(false); one->setVisible(true);
     sounds::getInstance()->play_effect("123");
-    sleep(1);
-    one->setVisible(false);go->setVisible(true);
+#ifdef WINDOWS
+	Sleep(1);
+#else
+	sleep(1);
+#endif
+	one->setVisible(false);go->setVisible(true);
     sounds::getInstance()->play_effect("go");
-    sleep(1);
-    go->setVisible(false);
+#ifdef WINDOWS
+	Sleep(1);
+#else
+	sleep(1);
+#endif
+	go->setVisible(false);
 
     Carrusel::fin = true;
 

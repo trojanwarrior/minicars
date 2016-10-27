@@ -220,9 +220,11 @@ void OptionsState::createMyGui()
 
 }
 
+#ifndef WINDOWS
 bool OptionsState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool OptionsState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool OptionsState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif

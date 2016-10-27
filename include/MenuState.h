@@ -54,9 +54,11 @@ class MenuState : public Ogre::Singleton<MenuState>, public GameState
   bool frameEnded (const Ogre::FrameEvent& evt);
   
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
     bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
 /*******************************************************************************/  
 
 

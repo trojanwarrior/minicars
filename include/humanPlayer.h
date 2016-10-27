@@ -2,7 +2,11 @@
 #define HUMANPLAYER_H
 
 #include "Ogre.h"
-#include "OgreBullet/Dynamics/OgreBulletDynamicsWorld.h"
+#ifdef WINDOWS
+	#include "OgreBulletDynamicsWorld.h"
+#else
+	#include "OgreBullet/Dynamics/OgreBulletDynamicsWorld.h"
+#endif
 #include "CarRayCast.h"
 #include "bulletUtil.h"
 #include "OgreUtil.h"

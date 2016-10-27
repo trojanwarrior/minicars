@@ -160,12 +160,14 @@ void RecordsState::createMyGui()
 //  high_score_txt->setCaption(points_str);
 }
 
+#ifndef WINDOWS
 bool RecordsState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool RecordsState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool RecordsState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif
 
 void RecordsState::notifyButtonPress(MyGUI::Widget* _widget)
 {

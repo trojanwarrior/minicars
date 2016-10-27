@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CCC005F3-E50E-4E3E-8D0E-1243C738C2B5}</ProjectGuid>
+    <RootNamespace>minicars</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>G:\desarrollo\prebuilt-dll-2-9-1-release\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>G:\desarrollo\prebuilt-dll-2-9-1-release\include;G:\desarrollo\SDL_mixer-1.2.12;G:\desarrollo\bullet3-2.85\src;G:\desarrollo\mygui\build\sdk\include\MYGUI;G:\desarrollo\mxml-2.10;G:\desarrollo\ogre1_9\build\sdk\include\OGRE\Overlay;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Dynamics;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Collisions;G:\desarrollo\SDL-1.2.15src\include;G:\desarrollo\ogre1_9\build\sdk\include\;G:\desarrollo\boost_1_62_0\;G:\desarrollo\ogre1_9\build\sdk\include\OGRE;G:\desarrollo\minicars\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_TIMESPEC_DEFINED;_CRT_SECURE_NO_WARNINGS;WINDOWS;WIIMOTE_LINUX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>G:\desarrollo\ogre1_9\build\sdk\lib\debug;G:\desarrollo\SDL-1.2.15src\VisualC\Debug;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Debug;G:\desarrollo\ogrebullet_bin\lib;G:\desarrollo\mygui\build\lib\Debug;G:\desarrollo\mxml-2.10\vcnet\Debug;G:\desarrollo\bullet3-2.85.build\lib\Debug;G:\desarrollo\boost_1_62_0\bin.v2\libs;G:\desarrollo\prebuilt-dll-2-9-1-release\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OgreOverlay_d.lib;BulletCollision_debug.lib;BulletDynamics_debug.lib;LinearMath_debug.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;MyGUIEngine_d.lib;MyGUI.OgrePlatform_d.lib;mxml1.lib;SDL.lib;OIS_d.lib;SDL_mixer.lib;pthreadVSE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>G:\desarrollo\bullet3-2.85.build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\actualOptions.cpp" />
+    <ClCompile Include="..\..\src\Bluez_Util.cpp" />
+    <ClCompile Include="..\..\src\car.cpp" />
+    <ClCompile Include="..\..\src\CarRayCast.cpp" />
+    <ClCompile Include="..\..\src\Carrusel.cpp" />
+    <ClCompile Include="..\..\src\carSelectorState.cpp" />
+    <ClCompile Include="..\..\src\ControlsState.cpp" />
+    <ClCompile Include="..\..\src\cpuPlayer.cpp" />
+    <ClCompile Include="..\..\src\CreditsState.cpp" />
+    <ClCompile Include="..\..\src\Crosshair.cpp" />
+    <ClCompile Include="..\..\src\GameManager.cpp" />
+    <ClCompile Include="..\..\src\humanPlayer.cpp" />
+    <ClCompile Include="..\..\src\iamanager.cpp" />
+    <ClCompile Include="..\..\src\IAPointsDeserializer.cpp" />
+    <ClCompile Include="..\..\src\IAPointsSerializer.cpp" />
+    <ClCompile Include="..\..\src\InputManager.cpp" />
+    <ClCompile Include="..\..\src\IntroState.cpp" />
+    <ClCompile Include="..\..\src\LooseState.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\MenuState.cpp" />
+    <ClCompile Include="..\..\src\ogreUtil.cpp" />
+    <ClCompile Include="..\..\src\OptionsState.cpp" />
+    <ClCompile Include="..\..\src\pathDrawerState.cpp" />
+    <ClCompile Include="..\..\src\PauseState.cpp" />
+    <ClCompile Include="..\..\src\PlayState.cpp" />
+    <ClCompile Include="..\..\src\PlayWidget.cpp" />
+    <ClCompile Include="..\..\src\puntoManager.cpp" />
+    <ClCompile Include="..\..\src\records.cpp" />
+    <ClCompile Include="..\..\src\RecordsState.cpp" />
+    <ClCompile Include="..\..\src\SceneNodeConfig.cpp" />
+    <ClCompile Include="..\..\src\sounds.cpp" />
+    <ClCompile Include="..\..\src\testStateVehicRaycast.cpp" />
+    <ClCompile Include="..\..\src\track.cpp" />
+    <ClCompile Include="..\..\src\Wiimote.cpp" />
+    <ClCompile Include="..\..\src\WinState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\actualOptions.h" />
+    <ClInclude Include="..\..\include\Bluez_Util.h" />
+    <ClInclude Include="..\..\include\bulletUtil.h" />
+    <ClInclude Include="..\..\include\car.h" />
+    <ClInclude Include="..\..\include\CarRayCast.h" />
+    <ClInclude Include="..\..\include\Carrusel.h" />
+    <ClInclude Include="..\..\include\carSelectorState.h" />
+    <ClInclude Include="..\..\include\constants.h" />
+    <ClInclude Include="..\..\include\ControlsState.h" />
+    <ClInclude Include="..\..\include\cpuPlayer.h" />
+    <ClInclude Include="..\..\include\CreditsState.h" />
+    <ClInclude Include="..\..\include\Crosshair.h" />
+    <ClInclude Include="..\..\include\GameManager.h" />
+    <ClInclude Include="..\..\include\GameState.h" />
+    <ClInclude Include="..\..\include\humanPlayer.h" />
+    <ClInclude Include="..\..\include\iamanager.h" />
+    <ClInclude Include="..\..\include\iapoint.h" />
+    <ClInclude Include="..\..\include\IAPointsDeserializer.h" />
+    <ClInclude Include="..\..\include\IAPointsSerializer.h" />
+    <ClInclude Include="..\..\include\InputManager_.h" />
+    <ClInclude Include="..\..\include\IntroState.h" />
+    <ClInclude Include="..\..\include\LooseState.h" />
+    <ClInclude Include="..\..\include\MenuState.h" />
+    <ClInclude Include="..\..\include\OgreUtil.h" />
+    <ClInclude Include="..\..\include\OptionsState.h" />
+    <ClInclude Include="..\..\include\pathDrawerState.h" />
+    <ClInclude Include="..\..\include\PauseState.h" />
+    <ClInclude Include="..\..\include\PlayState.h" />
+    <ClInclude Include="..\..\include\PlayWidget.h" />
+    <ClInclude Include="..\..\include\puntoIA.h" />
+    <ClInclude Include="..\..\include\puntoManager.h" />
+    <ClInclude Include="..\..\include\records.h" />
+    <ClInclude Include="..\..\include\RecordsState.h" />
+    <ClInclude Include="..\..\include\SceneNodeConfig.h" />
+    <ClInclude Include="..\..\include\sounds.h" />
+    <ClInclude Include="..\..\include\soundUtil.h" />
+    <ClInclude Include="..\..\include\testStateVehicRayCast.h" />
+    <ClInclude Include="..\..\include\track.h" />
+    <ClInclude Include="..\..\include\Wiimote.h" />
+    <ClInclude Include="..\..\include\WinState.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

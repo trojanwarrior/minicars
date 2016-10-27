@@ -53,9 +53,11 @@ class OptionsState : public Ogre::Singleton<OptionsState>, public GameState
   bool frameEnded (const Ogre::FrameEvent& evt);
   
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
     bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
 /*******************************************************************************/  
 
   // Heredados de Ogre::Singleton.

@@ -137,9 +137,11 @@ void LooseState::createScene()
  createMyGui();
 }
 
+#ifndef WINDOWS
 bool LooseState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool LooseState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool LooseState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif

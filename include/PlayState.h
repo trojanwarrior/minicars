@@ -33,7 +33,9 @@
 #include "Utils/OgreBulletCollisionsMeshToShapeConverter.h"
 #include <vector>
 #include "OgreUtil.h"
+#ifndef WINDOWS
 #include "Wiimote.h"
+#endif
 #include "constants.h"
 #include "CarRayCast.h"
 #include "track.h"
@@ -79,9 +81,11 @@ class PlayState : public Ogre::Singleton<PlayState>, public GameState
         bool frameEnded (const Ogre::FrameEvent& evt);
       
     /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
         bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
         bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
         bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
     /*******************************************************************************/  
       
 

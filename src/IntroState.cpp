@@ -201,11 +201,13 @@ void IntroState::createMyGui()
   //MyGUI::PointerManager::getInstancePtr()->setVisible(true);
 }
 
+#ifndef WINDOWS
 bool IntroState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool IntroState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool IntroState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif
 
 

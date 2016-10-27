@@ -2,7 +2,13 @@
 #define CPUPLAYER_H
 
 #include "Ogre.h"
-#include "OgreBullet/Dynamics/OgreBulletDynamicsWorld.h"
+
+#ifdef WINDOWS
+	#include "OgreBulletDynamicsWorld.h"
+#else
+	#include "OgreBullet/Dynamics/OgreBulletDynamicsWorld.h"
+#endif
+
 #include "CarRayCast.h"
 //#include "iamanager.h"
 #include "puntoManager.h"

@@ -111,9 +111,11 @@ void PauseState::createScene()
  createMyGui();
 }
 
+#ifndef WINDOWS
 bool PauseState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool PauseState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool PauseState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif

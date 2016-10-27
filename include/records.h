@@ -2,7 +2,8 @@
 #define __RECORS__H
 
 #include <iostream>
-#include <string.h>
+//#include <string.h>
+#include <string>
 #include <vector>
 #include <cstdio>
 #include <cstdlib>

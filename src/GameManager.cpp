@@ -60,6 +60,7 @@ void GameManager::start(GameState* state)
   _root->startRendering();
 }
 
+#ifndef WINDOWS
 bool GameManager::usarWiimote() 
 {
   if (_inputMgr)
@@ -73,6 +74,7 @@ bool GameManager::usarWiimote()
   return false;
 
 }
+#endif
 
 void GameManager::changeState(GameState* state)
 {
@@ -211,6 +213,7 @@ bool GameManager::mouseReleased(const OIS::MouseEvent &e, OIS::MouseButtonID id)
   return true;
 }
 
+#ifndef WINDOWS
 bool GameManager::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {
     std::cout << "GAMEMANAGER wiimoteButtonDown " <<  endl;
@@ -231,4 +234,4 @@ bool GameManager::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
     _states.top()->WiimoteIRMove(e);
     return true;
 }
-
+#endif

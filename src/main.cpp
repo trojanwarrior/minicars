@@ -42,6 +42,10 @@
 
 using namespace std;
 
+//Al parecer SDL hace un define de main, por lo que si queremos que funcione este main debemos "undefinir" el que ha hecho SDL
+// #define main SDL_main           <---- ya son ganas de liar la traca
+
+#undef main                        // "undefinimos" el main que hace SDL
 int main () {
   
   srand(time(NULL));
@@ -73,7 +77,7 @@ int main () {
   UNUSED_VARIABLE(winState);
   UNUSED_VARIABLE(looseState);
 
-  s->load_xml((char*)"sounds.xml");
+  //s->load_xml((char*)"sounds.xml");
   r->loadFile((char*)"records.txt");
   try
     {

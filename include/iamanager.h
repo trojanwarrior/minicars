@@ -44,7 +44,7 @@ class iamanager
   inline iacomplexpoint* getPoint(size_t id){ return (*points)[id]; };
 
   // devuelve el punto mas cercano a la posicion actual del coche
-  double near (iapoint * car, iacomplexpoint * result);
+  double cerca(iapoint * car, iacomplexpoint * result);
   int lap(){return _laps;}
   int offset(){return _offset;}
   float min_distance(){return _min_distance;}

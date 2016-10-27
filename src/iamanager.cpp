@@ -97,7 +97,7 @@ iacomplexpoint * iamanager::follow (iapoint * car)
   return result;
 }
 
-double iamanager::near (iapoint * car, iacomplexpoint * result)
+double iamanager::cerca (iapoint * car, iacomplexpoint * result)
 {
   double result_d=UINT_MAX;
   double d;

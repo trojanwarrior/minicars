@@ -21,6 +21,7 @@
 #ifndef WinState_H
 #define WinState_H
 
+
 #include <Ogre.h>
 #include <OIS/OIS.h>
 #include <ctime>
@@ -55,9 +56,11 @@ class WinState : public Ogre::Singleton<WinState>, public GameState
   int getPoints(){return points;};
   void setPoints(int p){points=p;}; 
 /* WIIMOTE *********************************************************************/  
+#ifndef WINDOWS
     bool WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e);
     bool WiimoteIRMove(const wiimWrapper::WiimoteEvent &e);
+#endif
 /*******************************************************************************/  
 
   // Heredados de Ogre::Singleton.

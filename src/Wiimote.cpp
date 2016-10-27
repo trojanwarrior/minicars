@@ -1,6 +1,8 @@
 #include "Wiimote.h"
 #include <cstring>
 
+#ifndef WINDOWS
+
 using namespace wiimWrapper;
 
 Wiimote::Wiimote()
@@ -188,3 +190,4 @@ bool Wiimote::AddWiimoteListener(shared_ptr<WiimoteListener> listener)
     return true;
 }
 
+#endif // !WINDOWS

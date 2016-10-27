@@ -343,9 +343,11 @@ void PlayState::set_score(int score) { this->score = score; }
 
 int PlayState::get_score() { return score; }
 
+#ifndef WINDOWS
 bool PlayState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e){ return true; }
 bool PlayState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e){ return true; }
 bool PlayState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e){ return true; }
+#endif
 
 void PlayState::cargarParametros(string archivo, bool consoleOut)
 {   
@@ -417,6 +419,7 @@ void PlayState::createScene()
     //_sceneMgr->setAmbientLight(Ogre::ColourValue(0.5, 0.5, 0.5));
     _sceneMgr->setAmbientLight(Ogre::ColourValue(0.7, 0.7, 0.7));
     _sceneMgr->setShadowTechnique(SHADOWTYPE_STENCIL_MODULATIVE);
+	//_sceneMgr->setShadowTechnique(SHADOWTYPE_TEXTURE_ADDITIVE_INTEGRATED);
     _sceneMgr->setShadowColour(ColourValue(0.5, 0.5, 0.5));
     _sceneMgr->setShadowFarDistance(100);
     _sceneMgr->setSkyBox(true, "skybox");
@@ -428,7 +431,7 @@ void PlayState::createScene()
     
     _track = unique_ptr<track>(new track("track1NoRoadBig",_world.get(),Vector3(0,0,0),_sceneMgr));
     createPlaneRoad();
-    createAtrezzo();
+    //createAtrezzo();	// COMENTADO POR TEMA DE CONFIGURACIÓN DE SOMBREADO. FALLA EN DEBUG
     
     // Carga de la malla que bordea el circuito para que no se salga el coche, SOLO PARA PRUEBAS
     //createVallaVirtual();
@@ -442,7 +445,8 @@ void PlayState::createScene()
     
     nodoOgre_t _checkPointInfo = SceneNodeConfig::getSingletonPtr()->getInfoNodoOgre("CheckPointPlane");
     
-    btCollisionObject* btobjAnterior; // para ir enlazando los user_data de cada btCollisionObject (puntero obtenible de cada rigidBody)
+    btCollisionObject* btobjAnterior = nullptr; // para ir enlazando los user_data de cada btCollisionObject (puntero obtenible de cada rigidBody)
+	
     
     for (size_t i = 0; i < vpoints.size(); i++)
     {

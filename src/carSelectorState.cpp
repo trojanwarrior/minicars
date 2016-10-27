@@ -310,6 +310,7 @@ bool carSelectorState::frameEnded(const Ogre::FrameEvent& evt)
     return !_exitGame;
 }
 
+#ifndef WINDOWS
 bool carSelectorState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent& e)
 {
     return true;
@@ -324,7 +325,7 @@ bool carSelectorState::WiimoteIRMove(const wiimWrapper::WiimoteEvent& e)
 {
     return true;    
 }
-
+#endif
 carSelectorState& carSelectorState::getSingleton()
 {
     assert(msSingleton);

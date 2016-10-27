@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#ifndef WINDOWS
 #include <unistd.h>
 #include <sys/socket.h>
 #include <bluetooth/bluetooth.h>
@@ -58,3 +59,4 @@ void Bluez_Util::Scanear()
     close( sock );
     //return 0;
 }
+#endif

@@ -464,6 +464,7 @@ bool pathDrawerState::frameEnded(const Ogre::FrameEvent& evt)
     return !_exitGame;
 }
 
+#ifndef WINDOWS
 bool pathDrawerState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent& e)
 {
     return true;
@@ -478,6 +479,7 @@ bool pathDrawerState::WiimoteIRMove(const wiimWrapper::WiimoteEvent& e)
 {
     return true;    
 }
+#endif
 
 pathDrawerState& pathDrawerState::getSingleton()
 {

@@ -5,7 +5,11 @@
 
 template<> InputManager_* Ogre::Singleton<InputManager_>::msSingleton = 0;
 
-InputManager_::InputManager_ ():  _inputSystem(0),  _keyboard(0),  _mouse(0), _wiimote(0) {}
+InputManager_::InputManager_ ():  _inputSystem(0),  _keyboard(0),  _mouse(0)
+#ifndef WINDOWS
+	, _wiimote(0) 
+#endif
+{}
 
 InputManager_::~InputManager_ ()
 {
@@ -30,7 +34,9 @@ InputManager_::~InputManager_ ()
     // Limpiar todos los listeners.
     _keyListeners.clear();
     _mouseListeners.clear();
+#ifndef WINDOWS
     _wiimoteListeners.clear();
+#endif
   }
 }
 
@@ -87,6 +93,7 @@ void InputManager_::initialise(Ogre::RenderWindow *renderWindow)
 // la conexión de forma asíncrona. Lanzar la llamada de conexión y seguir con otra cosa, por ejemplo, pintando
 // alguna animación indicando el proceso de conexión. Ahora mismo probablemente se bloquee el renderizado cuando
 // se realice el intento de conexión.
+#ifndef WINDOWS
 bool InputManager_::initialiseWiimote()
 {
     if (!_wiimote)
@@ -131,6 +138,7 @@ bool InputManager_::initialiseWiimote()
     return false;
     
 }
+#endif
 
 void InputManager_::capture ()
 {
@@ -140,9 +148,11 @@ void InputManager_::capture ()
     
     if (_mouse)
     _mouse->capture();
-    
+
+#ifndef WINDOWS
   if (_wiimote)
       _wiimote->Update();
+#endif
 }
 
 void InputManager_::addKeyListener(OIS::KeyListener *keyListener, const std::string& instanceName)
@@ -350,6 +360,7 @@ InputManager_& InputManager_::getSingleton()
 /*****************************************************************************/
 /*                         FUNCIONALIDAD WIIMOTE                             */
 /*****************************************************************************/
+#ifndef WINDOWS
 bool InputManager_::WiimoteButtonDown(const wiimWrapper::WiimoteEvent& arg)
 {
   itWiimoteListener = _wiimoteListeners.begin();
@@ -443,5 +454,6 @@ void InputManager_::removeAllWiimoteListeners()
 {
     _wiimoteListeners.clear();
 }
+#endif
 
 

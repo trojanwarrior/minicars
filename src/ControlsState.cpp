@@ -137,9 +137,11 @@ void ControlsState::createMyGui()
   //edt_high->setCaption(get_high_score());
 }
 
+#ifndef WINDOWS
 bool ControlsState::WiimoteButtonDown(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool ControlsState::WiimoteButtonUp(const wiimWrapper::WiimoteEvent &e)
 {return true;}
 bool ControlsState::WiimoteIRMove(const wiimWrapper::WiimoteEvent &e)
 {return true;}
+#endif
