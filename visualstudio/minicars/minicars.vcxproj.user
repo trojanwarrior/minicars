@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerEnvironment>PATH=%PATH%;G:\desarrollo\bullet3-2.85.build\lib\Debug;G:\desarrollo\ogre1_9\build\sdk\bin\debug;G:\desarrollo\ogrebullet_bin\bin;G:\desarrollo\mygui\build\bin\debug;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Debug;G:\desarrollo\SDL-1.2.15\lib\x86;G:\desarrollo\prebuilt-dll-2-9-1-release\dll\x86;G:\desarrollo\mxml-2.10\vcnet\Debug;</LocalDebuggerEnvironment>
+    <LocalDebuggerEnvironment>PATH=%PATH%;G:\desarrollo\bullet3-2.85.build\lib\Debug;G:\desarrollo\ogre1_9\build\sdk\bin\debug;G:\desarrollo\ogrebullet\build\Debug;G:\desarrollo\mygui\build\bin\debug;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Debug;G:\desarrollo\SDL-1.2.15src\VisualC\SDL\Debug;G:\desarrollo\prebuilt-dll-2-9-1-release\dll\x86;G:\desarrollo\mxml-2.10\vcnet\Debug;G:\desarrollo\pthreads4w-code;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)..\..\</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;G:\desarrollo\bullet3-2.85.build\lib\Release;G:\desarrollo\ogre1_9\build\sdk\bin\Release;G:\desarrollo\ogrebullet\build\Release;G:\desarrollo\mygui\build\bin\Release;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Release;G:\desarrollo\SDL-1.2.15src\VisualC\SDL\Release;G:\desarrollo\prebuilt-dll-2-9-1-release\dll\x86;G:\desarrollo\mxml-2.10\vcnet\Release;G:\desarrollo\pthreads4w-code;
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
     <LocalDebuggerWorkingDirectory>$(ProjectDir)..\..\</LocalDebuggerWorkingDirectory>
   </PropertyGroup>

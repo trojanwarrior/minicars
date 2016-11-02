@@ -69,22 +69,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LibraryPath>G:\desarrollo\prebuilt-dll-2-9-1-release\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>G:\desarrollo\pthreads4w-code;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>G:\desarrollo\prebuilt-dll-2-9-1-release\include;G:\desarrollo\SDL_mixer-1.2.12;G:\desarrollo\bullet3-2.85\src;G:\desarrollo\mygui\build\sdk\include\MYGUI;G:\desarrollo\mxml-2.10;G:\desarrollo\ogre1_9\build\sdk\include\OGRE\Overlay;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Dynamics;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Collisions;G:\desarrollo\SDL-1.2.15src\include;G:\desarrollo\ogre1_9\build\sdk\include\;G:\desarrollo\boost_1_62_0\;G:\desarrollo\ogre1_9\build\sdk\include\OGRE;G:\desarrollo\minicars\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>G:\desarrollo\pthreads4w-code;G:\desarrollo\SDL_mixer-1.2.12;G:\desarrollo\bullet3-2.85\src;G:\desarrollo\mygui\build\sdk\include\MYGUI;G:\desarrollo\mxml-2.10;G:\desarrollo\ogre1_9\build\sdk\include\OGRE\Overlay;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Dynamics;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Collisions;G:\desarrollo\SDL-1.2.15src\include;G:\desarrollo\ogre1_9\build\sdk\include\;G:\desarrollo\boost_1_62_0\;G:\desarrollo\ogre1_9\build\sdk\include\OGRE;G:\desarrollo\minicars\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>_TIMESPEC_DEFINED;_CRT_SECURE_NO_WARNINGS;WINDOWS;WIIMOTE_LINUX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>G:\desarrollo\ogre1_9\build\sdk\lib\debug;G:\desarrollo\SDL-1.2.15src\VisualC\Debug;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Debug;G:\desarrollo\ogrebullet_bin\lib;G:\desarrollo\mygui\build\lib\Debug;G:\desarrollo\mxml-2.10\vcnet\Debug;G:\desarrollo\bullet3-2.85.build\lib\Debug;G:\desarrollo\boost_1_62_0\bin.v2\libs;G:\desarrollo\prebuilt-dll-2-9-1-release\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OgreMain_d.lib;OgreOverlay_d.lib;BulletCollision_debug.lib;BulletDynamics_debug.lib;LinearMath_debug.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;MyGUIEngine_d.lib;MyGUI.OgrePlatform_d.lib;mxml1.lib;SDL.lib;OIS_d.lib;SDL_mixer.lib;pthreadVSE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\desarrollo\ogre1_9\build\sdk\lib\debug;G:\desarrollo\SDL-1.2.15src\VisualC\Debug;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Debug;G:\desarrollo\ogrebullet_bin\lib;G:\desarrollo\mygui\build\lib\Debug;G:\desarrollo\mxml-2.10\vcnet\Debug;G:\desarrollo\bullet3-2.85.build\lib\Debug;G:\desarrollo\boost_1_62_0\bin.v2\libs;G:\desarrollo\pthreads4w-code;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain_d.lib;OgreOverlay_d.lib;BulletCollision_debug.lib;BulletDynamics_debug.lib;LinearMath_debug.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;MyGUIEngine_d.lib;MyGUI.OgrePlatform_d.lib;mxml1.lib;SDL.lib;OIS_d.lib;SDL_mixer.lib;pthreadVSE2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -101,11 +101,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>G:\desarrollo\pthreads4w-code;G:\desarrollo\SDL_mixer-1.2.12;G:\desarrollo\bullet3-2.85\src;G:\desarrollo\mygui\build\sdk\include\MYGUI;G:\desarrollo\mxml-2.10;G:\desarrollo\ogre1_9\build\sdk\include\OGRE\Overlay;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Dynamics;G:\desarrollo\ogrebullet_bin\include\OgreBullet\Collisions;G:\desarrollo\SDL-1.2.15src\include;G:\desarrollo\ogre1_9\build\sdk\include\;G:\desarrollo\boost_1_62_0\;G:\desarrollo\ogre1_9\build\sdk\include\OGRE;G:\desarrollo\minicars\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;_CRT_SECURE_NO_WARNINGS;WINDOWS;WIIMOTE_LINUX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>G:\desarrollo\bullet3-2.85.build\lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>G:\desarrollo\ogre1_9\build\sdk\lib\release;G:\desarrollo\SDL-1.2.15src\VisualC\release;G:\desarrollo\SDL_mixer-1.2.12\VisualC\Release;G:\desarrollo\ogrebullet\build\Release;G:\desarrollo\mygui\build\lib\Release;G:\desarrollo\mxml-2.10\vcnet\Release;G:\desarrollo\bullet3-2.85.build\lib\Release;G:\desarrollo\boost_1_62_0\bin.v2\libs;G:\desarrollo\pthreads4w-code;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>OgreMain.lib;OgreOverlay.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib;OgreBulletCollisions.lib;OgreBulletDynamics.lib;MyGUIEngine.lib;MyGUI.OgrePlatform.lib;mxml1.lib;SDL.lib;OIS.lib;SDL_mixer.lib;pthreadVSE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
